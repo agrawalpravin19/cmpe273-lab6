@@ -11,6 +11,10 @@ import com.mashape.unirest.http.exceptions.UnirestException;
  */
 public class DistributedCacheService implements CacheServiceInterface {
     private final String cacheServerUrl;
+    
+    public String getServerURL(){
+    	return cacheServerUrl;
+    }
 
     public DistributedCacheService(String serverUrl) {
         this.cacheServerUrl = serverUrl;
